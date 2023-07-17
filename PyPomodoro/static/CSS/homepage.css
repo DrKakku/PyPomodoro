@@ -1,13 +1,51 @@
 body {
     background-color: beige;
     display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.MainContent {
+    display: flexbox;
+    margin-left: 1rem;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    justify-items: center;
 }
 
 h1 {
+    align-self: center;
     justify-self: center;
     color: cadetblue;
+}
+
+div.Heading {
+    width: 100vw;
+    height: 4rem;
+}
+
+div.lights {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.Buttons {
+    padding: 5rem;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    color: black;
+    font-size: larger;
 }

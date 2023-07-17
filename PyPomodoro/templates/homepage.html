@@ -6,11 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static',filename='CSS/homepage.css') }}">
+
     <title>Home Page for the server</title>
 </head>
 
 <body>
-    <h1>Welcome to the app</h1>
+    <div class="MainContent">
+        <div class="Heading">
+            <h1>Welcome to the app</h1>
+        </div>
+
+        <div class="phase">
+            <h1 style="color:{{State.Phase.Colour}};">{{State.Phase.name}}</h1>
+        </div>
+
+        <div class="lights">
+
+            <div class="Standby">
+
+                <svg>
+                    <circle class="StandbyC" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="Green" />
+                </svg>
+            </div>
+
+            <div class="Work">
+
+                <svg>
+                    <circle class="WorkC" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="Orange" />
+                </svg>
+            </div>
+
+            <div class="Rest">
+
+                <svg>
+                    <circle class="RestC" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="Blue" />
+                </svg>
+            </div>
+
+
+            <div class="End">
+
+                <svg>
+                    <circle class="EndC"  cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="Red" />
+                </svg>
+
+            </div>
+
+        </div>
+
+        <div class="Buttons">
+            <div class="Start">
+                <button onclick="Start()" style="background-color:chartreuse">Start</button>
+            </div>
+
+            <div class="Pause">
+                <button onclick="Pause()" style="background-color:darkorange">Pause</button>
+            </div>
+
+            <div class="Stop">
+                <button onclick="Stop()" style="background-color:maroon">Stop</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="{{url_for('static',filename='js/main.js') }}">
+    </script>
 
 </body>
 

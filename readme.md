@@ -1,6 +1,6 @@
 # Main Idea
 
-It will serve as a stand-in for the [[Table Clock with integrated Pomodoro]] as i need something to use for the [[20-20-20 Rule]] in the meantime
+It will serve as a stand-in for the Table Clock with integrated Pomodoro as i need something to use for the 20-20-20 Rule in the meantime
 
 It will serve as a basic pomodoro and will tell me when to stop working and when to resume the work 
 It will also store the number of sessions conducted during a day and the task (Optional)
